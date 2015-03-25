@@ -1,5 +1,5 @@
 <div class="container" ng-init="get()">
-  <div masonry>
+  <div masonry load-images="true" column-width="400">
     <div class="masonry-brick" ng-repeat="asset in assets">
         <img src="{{ asset }}/fit/500x300">
     </div>
