@@ -1,4 +1,4 @@
-angular.module('surfing', ['chute', 'ngRoute'])
+angular.module('surfing', ['chute', 'wu.masonry', 'ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

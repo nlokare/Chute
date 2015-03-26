@@ -1,7 +1,7 @@
 angular.module('chute', ['wu.masonry'])
   .controller('ChuteController', function ($scope, Surfers) {
     angular.extend($scope, Surfers);
-    
+
     $scope.assets;
 
     $scope.get = function () {
@@ -11,6 +11,10 @@ angular.module('chute', ['wu.masonry'])
         });
       });
     };
+
+    $('body').on('click', 'img', function (e) {
+      console.log('Modal open');
+    });
 
   })
   .factory('Surfers', function ($http) {
